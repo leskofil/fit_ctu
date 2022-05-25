@@ -1,0 +1,13 @@
+##files
+
+*.o
+*.out
+
+## directories
+
+**/__pycache__/
+**/.idea/
+**/assets/
+**/build/
+**/cmake-build-debug/
+**/.idea/
