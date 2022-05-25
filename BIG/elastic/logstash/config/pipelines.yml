@@ -1,0 +1,5 @@
+- pipeline.id: amazon
+  path.config: /usr/share/logstash/pipeline/logstash1.conf
+
+- pipeline.id: gold_filtered
+  path.config: /usr/share/logstash/pipeline/logstash.conf

@@ -1,0 +1,61 @@
+{
+  "index_patterns": "gold_filtered",
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
+  "mappings": {
+    "doc": {
+      "dynamic_templates": [
+        {
+          "string_fields": {
+            "mapping": {
+              "type": "text",
+              "omit_norms": true,
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "match_mapping_type": "string",
+            "match": "*"
+          }
+        }
+      ],
+      "properties": {
+        "Date": {
+          "type": "date",
+	  "format": "yy-mm-dd",
+          "ignore_malformed": true
+        },
+        "Open": {
+          "type": "float",
+          "ignore_malformed": true,
+          "norms": { "enabled": false }
+        },
+        "High": {
+          "type": "float",
+          "norms": { "enabled": false }
+        },
+        "Low": {
+          "type": "float",
+          "norms": { "enabled": false }
+        },
+        "Close": {
+          "type": "float",
+          "norms": { "enabled": false }
+        },
+        "Adj Close": {
+          "type": "float",
+          "norms": { "enabled": false }
+        },
+        "Volume": {
+          "type": "float",
+          "norms": { "enabled": false }
+        }
+      }
+    }
+  },
+  "aliases": {}
+}

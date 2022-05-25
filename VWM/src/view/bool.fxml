@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@bool.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <TextField fx:id="nameField" layoutX="27.0" layoutY="14.0" prefHeight="55.0" prefWidth="225.0" text="cat AND dog">
+         <effect>
+            <Blend />
+         </effect></TextField>
+      <Button fx:id="SequentialTravel" layoutX="273.0" layoutY="14.0" mnemonicParsing="false" onAction="#seqTrav" prefHeight="55.0" prefWidth="134.0" text="SequentialTravel" />
+      <Button fx:id="InvertedIndex" layoutX="435.0" layoutY="14.0" mnemonicParsing="false" onAction="#invInx" prefHeight="55.0" prefWidth="134.0" text="InvertedIndex" textOverrun="CENTER_ELLIPSIS" />
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="133.0" prefHeight="249.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="documentCol" prefWidth="395.20000076293945" text="Document" />
+          <TableColumn fx:id="relevanceCol" prefWidth="145.20001220703125" text="Relevance" />
+        </columns>
+      </TableView>
+      <Label fx:id="timeLabel" layoutX="27.0" layoutY="89.0" prefHeight="17.0" prefWidth="83.0" text="0.0" />
+   </children>
+</Pane>

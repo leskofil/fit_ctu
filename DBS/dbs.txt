@@ -1,0 +1,3 @@
+pro 7.: 1:14
+
+ddl prikaz: auto commit (zapni cizi klice)
