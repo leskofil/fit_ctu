@@ -1,0 +1,9 @@
+Poznamkovy blok
+Implementovaná bude aplikácia na spravovanie poznámok v termináli (zobrazovanie poznámok cez ui). Terminál zobrazí menu, z ktorého si uzivatel zvoli jednu z mozností, ktora mu bude ponuknuta. Moznosti su:
+1. Import a export poznamok. Ak bol zvoleny export uzivatel vyhladá pomocou terminálu poznámku alebo súbor s poznámkami a ten exportuje do formatu html alebo plaintext. Ak bol zvolený import, uzivatel zadá príslusnú cestu k súboru a formát do ktorého chce importovat (html/plaintext).
+2. Vyhladanie poznámky. Uzivatel si bude môct vyhladat svoje poznáky pomocou tagu, kategórie alebo textu ktorý poznámka obshuje. Po vyhladaní si bude môct svoju poznámku otvorit a uravit.
+3. Úprava poznámky. Aplikácia bude umoznovat upravit poznámku pomocou terminálu. 
+4. Vytvorit poznámku. Rovnako ako pri úprave uz vytvorenej poznámky bude mozné poznámku aj vytvorit pomocou terminálu.
+5. Odstránit poznámku. Aplikácia bude umoznovat odstránenie poznámky. 
+Aplikácie si bude ukladat poznámky do vlastného formátu v plaintexte. Pri vyhladávaniach a zobrazovaniach bude aplikácia zoradzovat podla názvu poznámky abecedne. 
+Dalej budú vytvorené kategórie poznámok ako: textová poznámka, zoznam úloh, nákupný zoznam apod. Pomocou tých si bude mozné poznámky triedit a vyhladávat.
